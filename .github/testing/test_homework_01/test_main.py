@@ -5,7 +5,7 @@ from faker import Faker
 homework = pytest.importorskip("homework_01.main")
 
 fake = Faker()
-# ХЗ
+
 @pytest.fixture(params=range(10))
 def m(request):
     return request.param
